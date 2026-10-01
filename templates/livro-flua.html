@@ -786,6 +786,19 @@
       font-size: 0.9rem;
     }
 
+    /* Amazon e Hotmart entram como alternativas: mesmo texto, peso visual menor */
+    .buy-option--alt { padding: 14px 16px 16px; }
+
+    .buy-option--alt .buy-platform { margin-bottom: 11px; font-size: 0.68rem; }
+
+    .buy-option--alt .btn {
+      width: auto;
+      min-height: 44px;
+      padding: 10px 24px;
+      font-size: 0.8rem;
+      box-shadow: 0 10px 24px rgba(5, 204, 118, 0.24);
+    }
+
     .buy-options + .cta-note { text-align: center; }
 
     .offer-sign {
@@ -800,6 +813,7 @@
     /* em telas estreitas o texto do CTA fica apertado */
     @media (max-width: 480px) {
       .buy-option .btn { padding-inline: 14px; font-size: 0.84rem; }
+      .buy-option--alt .btn { padding-inline: 18px; font-size: 0.76rem; }
     }
 
     /* ---------- footer ---------- */
@@ -1173,13 +1187,13 @@
                    href="https://loja.uiclap.com/titulo/ua163679">Quero adquirir o livro FLUA</a>
               </div>
 
-              <div class="buy-option">
+              <div class="buy-option buy-option--alt">
                 <p class="buy-platform">Amazon</p>
                 <a class="btn js-cta" data-cta="checkout" data-cta-label="oferta_amazon"
                    href="https://www.amazon.com.br/dp/B0H8QNCH6Y">Quero adquirir o livro FLUA</a>
               </div>
 
-              <div class="buy-option">
+              <div class="buy-option buy-option--alt">
                 <p class="buy-platform">Livro digital <span>(Hotmart)</span></p>
                 <a class="btn js-cta" data-cta="checkout" data-cta-label="oferta_hotmart"
                    href="https://hotmart.com/pt-br/marketplace/produtos/flua-descubra-seu-potencial-e-transforme-sua-vida/P106090066Y">Quero adquirir o livro FLUA</a>
